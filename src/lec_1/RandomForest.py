@@ -1,7 +1,10 @@
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
-from DataLoader import X_train, y_train, X_test, y_test
+import os, sys
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.insert(0, ROOT)
+from src.datasets.DataLoaderIris import X_train, X_test, y_train, y_test
 
 # Random Forest Classifier with default parameters
 rf_default = RandomForestClassifier(random_state=42)
