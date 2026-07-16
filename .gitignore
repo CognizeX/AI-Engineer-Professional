@@ -3,3 +3,5 @@ src/lec_1/func/__pycache__/**
 public/pdf/**
 src/__pycache__/**
 src/datasets/__pycache__/**
+.vscode/**
+MlOps.code-workspace
